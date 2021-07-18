@@ -21,10 +21,8 @@
 .gameicon,
 .patchContainer {
     border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     color: inherit;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    background: #fff;
+    background: #d900ff;
 }
 
 .gameicon {
@@ -35,11 +33,6 @@
     width: 144px;
     padding: 10px;
     justify-content: center;
-}
-
-.gameicon:hover,
-.dragover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .gameicon img {
@@ -103,49 +96,15 @@
     cursor: pointer;
 }
 
-.tooltip:hover,
-.tooltip:focus,
-.tooltip:active {
-    visibility: visible;
-    color: white;
-    border: none;
-    margin-top: 0px;
-    position: absolute;
-    padding: 3px 16px;
-    white-space: normal;
-    max-width: 300px;
-    z-index: 11;
-}
-
-.tooltip:before {
-    visibility: visible;
-    content: '?';
-    font-size: 18px;
-    margin-right: 8px;
-    background: gray;
-    border-radius: 50%;
-    padding: 2px 9px;
-    margin-left: -8px;
-    color: white;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.tooltip:hover:before,
-.tooltip:focus:before,
-.tooltip:active:before {
-    color: black;
-    display: none;
-}
 
 body {
     margin: 40px auto;
     max-width: 1300px;
     line-height: 1.6;
     font-size: 18px;
-    color: #000;
+    color: #66fc03;
     padding: 0 10px;
-    background: #e2e1e0;
+    background-image: url('img/site_bg.gif');
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
@@ -171,8 +130,6 @@ h1 a {
 }
 
 button, .fileLabel > strong {
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.25, 0.5, 0.5, 1);
     position: relative;
     padding: 0 16px;
     height: 36px;
@@ -184,23 +141,10 @@ button, .fileLabel > strong {
     letter-spacing: 0.04em;
     line-height: 2.25rem;
     color: rgba(0, 0, 0, 0.73);
-    transition-property: box-shadow, background;
     background-color: #40b31a;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 0px 2px rgba(0, 0, 0, 0.125);
     color: white;
     cursor: pointer;
-}
-
-button:disabled {
-    background-color: rgba(0, 0, 0, 0.12);
-    color: rgba(0, 0, 0, 0.38);
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
-    cursor: default;
-}
-
-button:hover:enabled, .fileLabel > strong:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.125);
-    background-color: #5dbe3c;
 }
 
 .matchPercent {
@@ -279,12 +223,6 @@ input[type=radio] {
     text-align: center;
     z-index: 11;
     font-size: 8rem;
-}
-
-.tooltip:not(:hover) {
-    font-size: 0px;
-    padding: 0;
-    margin-left: 16px;
 }
 
 .tooltip {
