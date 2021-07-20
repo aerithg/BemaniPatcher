@@ -188,6 +188,12 @@
                             { offset: 0x28C714, off: [0xF3, 0x45, 0x0F], on: [0x90, 0x90, 0x90] },
                         ],
                     },
+					{
+						name: 'Disable TDJ check for lightning category',
+						patches: [
+							{offset: 0x4A41F8, off: [0x75, 0x0A], on: [0x90, 0x90]},
+						],
+					},
                     {
                         name: "Skip Camera Error",
                         patches: [{ offset: 0x752CBB, off: [0x84], on: [0x81] }],
